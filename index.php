@@ -9,7 +9,7 @@ class Post {
     }
 
     public static function getInstance(){
-        if(self::$instance == null){
+        if(!self::$instance){
             self::$instance = new Post();
         }
         return self::$instance;
